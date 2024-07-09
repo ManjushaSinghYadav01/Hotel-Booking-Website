@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+body{
+    background-color: white;
+}
+
+.buttons ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.buttons{
+    position: absolute;
+    top: 45px;
+    left: 410px;
+    font-size: 20px;
+    background-color: white;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+#home{
+    position: absolute;
+    top: 40px;
+    left: 415px;
+    background-color: red;
+}
+
+#about{
+    position: absolute;
+    top: 40px;
+    left: 495px;
+    background-color: green;
+}
+
+#specials{
+    position: absolute;
+    top: 40px;
+    left: 598px;
+    background-color: blue;
+}
+
+#services{
+    position: absolute;
+    top: 40px;
+    left: 700px;
+    background-color: darkmagenta;
+}
+
+#contacts{
+    position: absolute;
+    top: 40px;
+    left: 803px;
+    background-color: darkorange;
+}
+
+.buttons:hover {
+    color: #4682B4;  
+}
+
+
+.nav-bar{
+    position: absolute;
+    top: 10px;
+    height: 120px;
+    width: 1330px;
+    background-color: #4682B4;
+    border: solid darkmagenta 4px;
+}
+
+#name{
+    position: absolute;
+    margin-top: -15px;
+    left: 120px;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 0, 200);
+    text-shadow: 3px 3px darkmagenta;
+}
+
+#n1{
+    position: absolute;
+    top: 70px;
+    left: 70px;
+}
+
+#hotel{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.book-button{
+    top: 47px;
+    left: 1170px;
+    width: 130px;
+    position: absolute;
+}
+
+.book-button .booking-link{
+    position: absolute;
+    width: 155px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.book-button .booking-link a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: black;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(12px);
+    background-color: darkkhaki;
+}
+
+.book-button .booking-link:hover a{
+    letter-spacing: 2px;
+}
+
+.book-button .booking-link a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,0.3), transparent);
+    transform: skewX(45deg) translateX(0);
+}
+
+.book-button .booking-link:hover a::before{
+    transform: skewX(45deg) translateX(100%);
+}
+
+.book-button .booking-link::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -9px;
+    width: 40px;
+    height: 10px;
+    background: cyan;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.book-button .booking-link:hover::before{
+    left: 50%;
+    bottom: 0;
+    height: 50%;
+    width: 85%;
+    border-radius: 30px;
+    transition-delay: 0.2s;
+}
+
+.book-button .booking-link::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -7px;
+    width: 40px;
+    height: 10px;
+    background: red;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.book-button .booking-link:hover::after{
+    left: 50%;
+    top: 0;
+    height: 50%;
+    width: 85%;
+    border-radius: 30px;
+    transition-delay: 0.2s;
+}
+
+div.hotel-image{
+    border: 2px solid black;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    background-color: white;
+    height: 445px;
+    width: 550px;
+}
+
+.color-overlay{
+    background: #000;
+    opacity: .5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 445px;
+    width: 550px;
+}
+
+.hotel-image p{
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-family: 'Lora', serif;
+    font-size: 38px;
+    z-index: 1;
+    color: rgb(255, 123, 0);
+    font-weight: bold;
+}
+
+#rooms1{
+    border: 2px solid black;
+    background-color: white;
+    object-fit: cover;
+}
+
+.hall{
+    position: absolute;
+    top: 150px;
+    left: 585px;
+}
+
+.room1{
+    position: absolute;
+    top: 150px;
+    left: 970px;
+}
+
+.room2{
+    position: absolute;
+    top: 384px;
+    left: 585px;
+}
+
+.room3{
+    position: absolute;
+    top: 384px;
+    left: 840px;
+}
+
+.pool{
+    position: absolute;
+    top: 384px;
+    left: 1100px;
+}
+
+.info .heading{
+    position: absolute;
+    top: 650px;
+    left: 30px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: darkblue;
+}
+
+.info #second-h{
+    position: absolute;
+    top: 470px;
+    left: 0px;
+}
+
+.info p{
+    position: absolute;
+    top: 690px;
+    left: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: darkmagenta;
+}
+
+.info #second-p{
+    position: absolute;
+    top: 520px;
+    left: 0px;
+}
+
+.info #third-h{
+    position: absolute;
+    top: 830px;
+    left: 0px;
+}
+
+.info #third-p{
+    position: absolute;
+    top: 870px;
+    left: 0px;
+}
+
+.info #fourth-h{
+    position: absolute;
+    top: 950px;
+    left: 0px;
+}
+
+.info #fourth-p{
+    position: absolute;
+    top: 995px;
+}
+
+#myBtn{
+    position: absolute;
+    top: 748px;
+    left: 310px;
+}
+
+#more{
+    display: none;
+}
+
+.heading2{
+    position: absolute;
+    top: 1850px;
+    left: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: orangered;
+    font-weight: bolder;
+}
+
+.heading2 h1{
+    background-color: lightpink;
+    padding: 2px;
+}
+
+.heading2 #popular{
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    color: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.images{
+    outline: 2px solid black;
+    padding-bottom: 50px;
+    background-color: #4682B4;
+}
+
+#desk-plugs{
+    position: absolute;
+    top: 140px;
+    left: 70px;
+}
+
+#nespresso{
+    position: absolute;
+    top: 140px;
+    left: 370px;
+}
+
+#room-service{
+    position: absolute;
+    top: 140px;
+    left: 670px;
+}
+
+#blackout{
+    position: absolute;
+    top: 140px;
+    left: 970px;
+}
+
+#pillows{
+    position: absolute;
+    top: 430px;
+    left: 220px;
+}
+
+#reck{
+    position: absolute;
+    top: 430px;
+    left: 525px;
+}
+
+#dnd{
+    position: absolute;
+    top: 430px;
+    left: 830px;
+}
+
+#p1{
+    position: absolute;
+    top: 320px;
+    left: 110px;
+    color: darkred;
+}
+
+#p2{
+    position: absolute;
+    top: 325px;
+    left: 370px;
+    font-size: 23px;
+    color: darkred;
+}
+
+#p3{
+    position: absolute;
+    top: 312px;
+    left: 745px;
+    color: darkred;
+}
+
+#p4{
+    position: absolute;
+    top: 312px;
+    left: 1030px;
+    color: darkred;
+}
+
+#p5{
+    position: absolute;
+    top: 602px;
+    left: 233px;
+    color: darkred;
+}
+
+#p6{
+    position: absolute;
+    top: 602px;
+    left: 590px;
+    color: darkred;
+}
+
+#p7{
+    position: absolute;
+    top: 602px;
+    left: 900px;
+    color: darkred;
+}
+
+.features h1{
+    background-color: lightgreen;
+    color: rgb(100, 6, 141);
+    position: absolute;
+    top: 2550px;
+    left: 30px;
+    font-size: 45px;
+    padding: 0px;
+}
+
+.food{
+    position: absolute;
+    background-color: white;
+    color: darkred;
+    font-family: 'Roboto', sans-serif;
+}
+
+.active{
+    position: absolute;
+    background-color: white;
+    color: darkcyan;
+    font-family: 'Roboto', sans-serif;
+}
+
+.swim{
+    position: absolute;
+    background-color: white;
+    color: darkgreen;
+    font-family: 'Roboto', sans-serif;
+}
+
+.safety{
+    position: absolute;
+    background-color: white;
+    color: darkmagenta;
+    font-family: 'Roboto', sans-serif;
+}
+
+.well{
+    position: absolute;
+    background-color: white;
+    color: darkcyan;
+    font-family: 'Roboto', sans-serif;
+}
+
+.access{
+    position: absolute;
+    background-color: white;
+    color: darkorange;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clean{
+    position: absolute;
+    background-color: white;
+    color: darkorchid;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pets{
+    position: absolute;
+    background-color: white;
+    color: darkgoldenrod;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lang{
+    position: absolute;
+    background-color: white;
+    color: darkblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+#food1{
+    position: absolute;
+    top: 2620px;
+    left: 55px;
+    font-size: 30px;
+    width: 328px;
+}
+
+#active1{
+    position: absolute;
+    top: 2840px;
+    left: 995px;
+    font-size: 30px;
+    width: 211px;
+}
+
+#swim1{
+    position: absolute;
+    top: 2620px;
+    left: 690px;
+    font-size: 30px;
+    width: 256px;
+}
+
+#safety1{
+    position: absolute;
+    top: 2620px;
+    left: 995px;
+    font-size: 30px;
+    width: 321px;
+}
+
+#well1{
+    position: absolute;
+    top: 2840px;
+    left: 55px;
+    font-size: 30px;
+    width: 170px;
+}
+
+#access1{
+    position: absolute;
+    top: 2840px;
+    left: 320px;
+    font-size: 30px;
+    width: 230px;
+}
+
+#clean1{
+    position: absolute;
+    top: 2925px;
+    left: 480px;
+    font-size: 30px;
+    width: 321px;
+}
+
+#pets1{
+    position: absolute;
+    top: 2840px;
+    left: 710px;
+    font-size: 30px;
+    width: 250px;
+}
+
+#lang1{
+    position: absolute;
+    top: 2625px;
+    left: 430px;
+    font-size: 25px;
+    width: 260px;
+}
+
+#food-para{
+    position: absolute;
+    top: 2660px;
+    left: 55px;
+    padding-left: 20px;
+    font-size: 18px;
+    height: 150px;
+}
+
+#active-para{
+    position: absolute;
+    top: 2880px;
+    left: 995px;
+    padding-left: 20px;
+    font-size: 18px;
+    height: 150px;
+}
+
+#swim-para{
+    position: absolute;
+    top: 2660px;
+    left: 690px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+#safety-para{
+    position: absolute;
+    top: 2660px;
+    left: 995px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+#well-para{
+    position: absolute;
+    top: 2880px;
+    left: 55px;
+    padding-left: 20px;
+    font-size: 18px;
+    width: 150px;
+}
+
+#access-para{
+    position: absolute;
+    top: 2880px;
+    left: 330px;
+    padding-left: 20px;
+    font-size: 18px;
+    width: 210px;
+}
+
+#clean-para{
+    position: absolute;
+    top: 2965px;
+    left: 480px;
+    padding-left: 20px;
+    font-size: 18px;
+    width: 301px;
+}
+
+#pets-para{
+    position: absolute;
+    top: 2880px;
+    left: 610px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+#lang-para{
+    position: absolute;
+    top: 2655px;
+    left: 430px;
+    padding-left: 20px;
+    font-size: 18px;
+    width: 260px;
+}
+
+.rules h2{
+    position: absolute;
+    top: 3060px;
+    left: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    padding: 0px;
+    color: black;
+}
+
+.rules ul{
+    position: absolute;
+    top: 3110px;
+    left: 30px;
+    background-color: lightblue;
+    color: black;
+    padding-left: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    width: 1200px;
+}
+
+.policies h2{
+    position: absolute;
+    top: 3280px;
+    left: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: black;
+}
+
+.c{
+    color: darkblue;
+}
+
+.policies ul{
+    position: absolute;
+    top: 3330px;
+    left: 30px;
+    font-size: 25px;
+    font-family: 'Roboto',sans-serif;
+    background-color: lightblue;
+    font-weight: 500;
+    color: black;
+    padding-left: 25px;
+    width: 1200px;
+}
+
+.contact-us h2{
+    position: absolute;
+    top: 3590px;
+    left: 30px;
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    color: black;
+}
+
+.contact-us p{
+    position: absolute;
+    top: 3630px;
+    left: 30px;
+    font-size: 20px;
+}

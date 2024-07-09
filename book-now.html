@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <div class="head">
+        <img alt="book" src="book.jpg">
+        <h1>BOOK NOW</h1>
+        <div class="color-overlay"></div>
+    </div>
+    <div class="form1">
+        <form>
+            <label class="label1" id="a" for="fname">First Name: </label><br>
+            <input type="text" id="fname" name="fname"> <br><br>
+            <label class="label1" id="b" for="lname">Last Name: </label><br>
+            <input type="text" id="lname" name="lname"> <br><br>
+            <label class="label1" id="c" for="email">Email: </label><br>
+            <input type="text" id="email" name="email"> <br><br>
+            <label class="label1" id="d" for="phone">Phone Number: </label><br>
+            <select>
+                <option>91</option>
+                <option>92</option>
+                <option>93</option>
+                <option>94</option>
+                <option>95</option>
+            </select>
+            <input type="text" id="phone" name="phone"> <br><br>
+            <label class="label1" id="e" for="country">Country/Region of Residence </label><br>
+            <input type="text" id="country" name="country"> <br><br>
+        </form>
+        <div class="box1"></div>
+    </div>
+    <form>
+        <label class="label2"><input type="checkbox" id="myCheck" onclick="myFunction()">Make this booking for someone else</label>
+    </form>
+    <div class="form2" id="guest" style="display:none">
+        <h2>Guest Information</h2>
+        <form>
+            <label class="label3" id="a1" for="fullname1">Full Name: </label><br>
+            <input type="text" id="fullname1" name="fullname1"> <br><br>
+            <label class="label3" id="b1" for="phone1">Phone Number: </label><br>
+            <select>
+                <option>91</option>
+                <option>92</option>
+                <option>93</option>
+                <option>94</option>
+                <option>95</option>
+            </select>
+            <input type="text" id="phone1" name="phone1"> <br><br>
+            <label class="label3" id="c1" for="country1">Country/Region of Residence </label><br>
+            <input type="text" id="country1" name="country1"> <br><br>
+        </form>
+        <div class="box2"></div>
+    </div>
+    <script>
+        function myFunction() {
+          var checkBox = document.getElementById("myCheck");
+          var text = document.getElementById("guest");
+          if (checkBox.checked == true){
+            text.style.display = "block";
+          } else {
+             text.style.display = "none";
+          }
+        }
+        </script>
+    <div class="form3">
+        <form>
+            <label class="label4" id="a2" for="n-smoke">Do you have smoking preference?</label><br>
+            <input type="radio" name="n-smoke">
+            <label class="label4" for="n-smoke">Non Smoking</label><br>
+            <input type="radio" name="smoke">
+            <label class="label4" for="smoke">Smoking</label><br><br>
+            <label class="label4" id="b2" for="bed">What bed configuration do you prefer?</label><br>
+            <input type="radio" name="single">
+            <label class="label4" for="bed">Single bed</label><br>
+            <input type="radio" name="double">
+            <label class="label4" for="twin">Double bed</label><br>
+            <input type="radio" name="multiple">
+            <label class="label4" for="twin">Multiple bed</label><br>
+            <label class="label5" for="notes">Additional Notes:-</label><br><br><br>
+            <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br><br>
+            <label class="label6" for="check">Check-in time</label><br>
+            <input type="text" id="check" name="check"><br><br>
+            <label class="label7" for="para">Let us know what you need. <br>Requests are fulfilled on a first come,<br> 
+                first serve basis. Will send yours right after you book.
+            </label>
+        </form>
+        <button class="pay" id="button">Pay Now</button> 
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

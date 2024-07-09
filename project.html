@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="project1.css">
+    <title>Hotel</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div id="hotel">
+            <img alt="hotel" src="hotel.jpg" width="100" height="100">
+          </div>
+        <div id="name">
+        <h1>THE MEADOWS <br> <div id="n1">HOTEL</div></h1> </div>
+        <ul>
+            <button class="buttons" id="home">Home</button>
+            <button class="buttons" id="about">AboutUs</button>
+            <button class="buttons" id="specials">Specials</button>
+            <button class="buttons" id="services">Services</button>
+            <button class="buttons" id="contacts">ContactUs</button>
+        </ul>
+    </div>
+    <div class="book-button">
+        <div class="booking-link"><a href="book-now.html">Book Now</a></div>
+    </div>
+    <div class="hotel-image">
+        <img alt="hotel" src="hotel1.jpg" height="445px" width="550px">         
+        <p>Nice and perfect place <br> to stay in...</p>
+        <div class="color-overlay"></div>
+    </div>
+    <section class="rooms">
+        <img id="rooms1" class="hall" alt="hall" src="hall.jpg" height="220px" width="370px">
+        <img id="rooms1" class="room1" alt="room1" src="room1.jpg" height="220px" width="370px">
+        <img id="rooms1" class="room2" alt="room2" src="room2.png" height="210px" width="240px">
+        <img id="rooms1" class="room3" alt="room3" src="room3.jpg" height="210px" width="245px">
+        <img id="rooms1" class="pool" alt="pool" src="pool.jpg" height="210px" width="240px">
+    </section>
+    <section class="info">
+        <span class="heading" id="first-h">THE MEADOWS HOTEL</span>
+        <p> Getting in and around Lucknow is a breeze when staying at THE MEADOWS HOTEL-Gomti Nagar, 
+            located just minutes away from city center.<span id="dots">...</span><span id="more"> <br>
+                At THE 
+                MEADOWS-Gomti Nagar, guests are bound to have a stress-free stay. Keep up with all your 
+                communications easily with hotel's free Wi-Fi . Getting from and back to the airport can 
+                be easily arranged with the hotel's free airport transfer services. Taxi and Car hire services
+                provided by the hotel make exploring Lucknow even more convenient. 
+                Guests can enjoy free parking right at the hotel. Front desk services including concierge 
+                service , express check-in or check-out, luggage storage and safety deposit boxes can assist 
+                with your needs. Getting tickets for the city's best entertainment is easy through the hotel's 
+                ticket service and tours. Packing light is possible at THE MEADOWS HOTEL ,thanks to the hotel's 
+                dry cleaning service laundry service keeping your clothes clean. 
+                Feeling lazy? In room conveniences like 24-hour room service, room service ad daily housekeeping
+                 let you get most out of your room time. Smoking is allowed only in the designated smoking areas 
+                 provided by hotel. 
+                All rooms at THE MEADOWS HOTEL are designed for comfort . For your comfort , rooms at the hotels
+                 are equipped with air conditioning . Selected rooms at The Meadows Hotel are included with 
+                 balcony or terrace, as part of the room design. In room entertainment amenities are available 
+                 in some rooms and include daily newspaper, television and cable TV. 
+                In selected rooms you can find bottled water ,a coffee or tea maker and mini bar at your 
+                disposal. It's good to know that a hair dryer and bathrobes are provided in  guests bathrooms.
+                <span class="heading" id="second-h">DINING AND THINGS TO DO</span> <br><br>
+                <span id="second-p"> Enjoy the morning bliss with a sip of good coffee at the café located at the hotel. A variety 
+                of convenient and tasty dining options are waiting for you at the hotel , for whenever you get 
+                hungry. A memorable night with your travel companion can be had without going far, at the hotel's
+                bar. Do you prefer to cook your own meal? Then you will love the In-house BBQ facilities.
+                Apart from amenities and services ,THE MEADOWS HOTEL goes the extra miles to make sure all
+                guests make most of their time. End your days in total relaxation with a visit to relaxation 
+                center provided by us. You may also spend some time relaxing at the hotel's pool. Sip your 
+                favorite cocktail outdoor at the hotel's poolside bar. 
+                Check-out the hotel's fitness facility to stay fit and firm on vacation. 
+                Engage in some easy evening fun with other guests with the hotel's tennis court. 
+                Get  social at hotel's library and shared lounge and TV area, where you can meet other guests. 
+                Grab some last-minutes needs or local souvenirs for yourself or those back home without having 
+                to go anywhere at the shops and souvenir shops available right at on-site.</span>
+                <span class="heading" id="third-h">AROUND THE PROPERTY</span>
+                <span id="third-p">Experience all the sights and local attractions of this city with THE 
+                MEADOWS HOTELS as your base. Experience local culture through architecture at Vidhan 
+                Sabha Bhawan Council House located 41 km away.</span>
+                <span class="heading" id="fourth-h">REASONS TO STAY HERE</span>
+                <span id="fourth-p">Prices you can't beat. <br>
+                    Staff speaks different languages <br>
+                    100% safe bookings for our guests. <br> 
+                    Great  location to spend time with friends and family.</span>
+            </span></p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+            <script>
+                function myFunction() {
+                  var dots = document.getElementById("dots");
+                  var moreText = document.getElementById("more");
+                  var btnText = document.getElementById("myBtn");
+                
+                  if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                  } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                  }
+                }
+            </script>
+    </section>
+    <div class="heading2" id="amenities">
+        <h1>Amenities and Facilities</h1>
+        <p id="popular">Most Popular</p>
+        <section class="facilities">
+            <img alt="desk-plugs" class="images" id="desk-plugs" src="Desk-Plugs.jpg" height="200px" width="230px">
+            <p id="p1">Desk Plugs</p>
+            <img alt="nespresso" class="images" id="nespresso" src="nespresso.jpg" height="200px" width="230px">
+            <p id="p2">Nespresso Machine</p>
+            <img alt="room-service" class="images" id="room-service" src="room-service.jpg" height="200px" width="230px">
+            <p id="p3">Service Menu</p>
+            <img alt="blackout" class="images" id="blackout" src="blackout.jpg" height="200px" width="230px">
+            <p id="p4">Blackout Curtains</p>
+            <img alt="pillows" class="images" id="pillows" src="pillows.jpg" height="200px" width="230px">
+            <p id="p5">Non Decorative <br> Pillows</p>
+            <img alt="reck" class="images" id="reck" src="reck.jpg" height="200px" width="230px">
+            <p id="p6">Luggage Reck</p>
+            <img alt="dnd" class="images" id="dnd" src="dnd.jpg" height="200px" width="230px">
+            <p id="p7"><b>Electric DND</b></p>
+        </section>
+    </div>
+    <div class="features">
+        <h1>More Facilities</h1>
+        <div class="fts">
+            <h2 class="food" id="food1">Foods and Drinks</h2>
+            <ul class="food" id="food-para">
+                <li>Fruits(Additional charges)</li>
+                <li>Wine/Champagne(Additional Charges) </li>
+                <li>Breakfast in room  </li>
+                <li>Bar </li>
+                <li>Restaurant</li></ul>
+            <h2 class="active" id="active1">Activities</h2>
+            <ul class="active" id="active-para">
+                <li>Casino </li>
+                <li>Golf Course within 3 km</li>
+                <li>(Additional charge)</li></ul>
+            <h2 class="swim" id="swim1">Swimming Pool</h2>
+            <ul class="swim" id="swim-para">
+                <li>Open all year </li>
+                <li>All ages are welcomed </li>
+                <li>Pool/Beach towels </li>
+                <li>Sun loungers or Beach chairs </li>
+                <li>Pool bars </li>
+                <li>Sun Umbrella </li>
+                <li>Shallow end</li></ul>
+            <h2 class="safety" id="safety1">Safety and Security</h2>
+            <ul class="safety" id="safety-para">
+                <li>CCTV cameras</li>
+                <li>Emergency Response cell</li>
+                <li>Safe and Secure electrical appliances</li>
+                <li>Availability of fire extinguisher</li></ul>
+            <h2 class="well" id="well1">WELLNESS</h2>
+            <ul class="well" id="well-para">
+                <li>Gym</li>
+                <li>Spa Facilities</li>
+                <li>Beauty Services</li>
+                <li>Fitness Centre</li>
+                <li>Zumba Classes</li>
+                <li>Yoga Classes</li></ul>
+            <h2 class="access" id="access1">ACCESSIBILITY</h2>
+            <ul class="access" id="access-para">
+                <li>Wheelchair accessible</li>
+                <li>Room Services</li></ul>
+            <h2 class="clean" id="clean1">CLEANING SERVICES</h2>
+            <ul class="clean" id="clean-para">
+                <li>Daily house keeping</li>
+                <li>Ironing services(Additional Charge)</li>
+                <li>Dry cleaning(Additional Charge)</li></ul>
+            <h2 class="pets" id="pets1">PETS</h2>
+            <ul class="pets" id="pets-para">
+                <li>Pets are allowed for no extra charge</li></ul>
+            <h2 class="lang" id="lang1">LANGUAGES</h2>
+            <ul class="lang" id="lang-para">
+                <li>English</li>
+                <li>Hindi</li>
+                <li>Spanish</li>
+                <li>French</li>
+                <li>German</li>
+                <li>Chinese</li>
+                <li>japanese</li></ul>       
+        </div>
+    </div>
+    <div class="rules">
+        <h2>HOUSE RULES</h2>
+        <ul>
+            <li>Guests are required to show photo identification and credit card upon check-in.</li>
+            <li>Cancellation and prepayment policies may vary according to accommodation type.</li>
+            <li>Children of all ages are most welcomed.</li>
+            <li>The minimum age for check-in is  21 years.</li>
+            <li>Pets are allowed at no extra charges.</li>
+        </ul>
+    </div>
+    <div class="policies">
+        <h2>POLICIES OF  <span class="c">"THE MEADOWS HOTEL"</span></h2>
+        <ul>
+            <li>The daily resort fee includes :-Internet access, Cardio Centre Access, Local and 800 phone calls as per THE MEADOWS HOTEL'S policy.</li>
+            <li>In response to coronavirus (COVID-19) additional Safety and Sanitation  measures are in effect at this property.</li>
+            <li>Due to Corona(COVID-19), this property is taking steps to help protect the safety of guests and staff. Certain services and amenities may be reduced or unavailable as a result.</li>
+            <li>Guests are required to show a photo identification and credit card upon check-in. Please note that all special requests are subject to availability and additional charge may apply.</li>
+        </ul>
+    </div>
+    <div class="contact-us">
+        <h2>HELPLINE</h2>
+        <p>We the family of THE MEADOWS HOTEL are always there in your service 24X7. <br>
+            To know more about our facilities, terms and conditions. <br>
+            Fell free to contact us at :- <b>9898223454, 123456789</b><br>
+            Email Us at:- <b><i>meadows2004@gmail.com</i></b>
+        </p>
+    </div>
+
+</body>
+</html>

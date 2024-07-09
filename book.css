@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+    
+img{
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    height: 657px; 
+    width: 1366px; 
+    background-color: white;
+}
+    
+.color-overlay{
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    background: #000; 
+    opacity: .5; 
+    height: 657px; 
+    width: 1366px;
+}
+    
+.head h1{
+    position: absolute; 
+    top: -18px; 
+    left: 550px; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 45px;
+    background-color: lightblue; 
+    color: red; 
+    z-index: 1;
+}
+    
+.box1{
+    position: absolute; 
+    top: 70px; 
+    left: 200px; 
+    background: lightgreen; 
+    opacity: .7; 
+    width: 400px; 
+    height: 365px;
+    border: 1px solid black;
+}
+    
+.form1 form{
+    position: absolute; 
+    top: 75px; 
+    left: 220px; 
+    width: 400px; 
+    z-index: 1;
+}
+
+.label1{
+    color: darkred;
+    font-weight: 500;
+    text-shadow: blueviolet 1px 1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+#fname{
+    height: 20px;
+    width: 250px;
+}
+
+#lname{
+    height: 20px;
+    width: 250px;
+}
+
+#email{
+    height: 20px;
+    width: 320px;
+}
+
+#country{
+    height: 20px;
+    width: 300px;
+}
+
+.label2{
+    position: absolute;
+    top: 410px;
+    left: 220px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.box2{
+    position: absolute; 
+    top: 440px; 
+    left: 200px; 
+    background: lightcoral; 
+    opacity: .7; 
+    width: 400px; 
+    height: 210px;
+    border: 1px solid black;
+}
+
+.form2 h2{
+    position: absolute;
+    top: 425px;
+    left: 220px;
+    z-index: 1;
+    color: darkblue;
+}
+
+.form2 form{
+    position: absolute; 
+    top: 475px; 
+    left: 220px; 
+    z-index: 1;
+}
+
+.label3{
+    color: darkgreen;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+#fullname1{
+    height: 15px;
+    width: 270px;
+}
+
+#phone1{
+    height: 15px;
+    width: 120px;
+}
+
+#country1{
+    height: 15px;
+    width: 210px;
+}
+
+.box3{
+    position: absolute; 
+    top: 70px; 
+    left: 605px; 
+    background: orange; 
+    opacity: .7; 
+    width: 580px; 
+    height: 580px;
+    border: 1px solid black;
+}
+
+.form3 form{
+    position: absolute;
+    top: 80px;
+    left: 650px;
+    z-index: 1;
+}
+
+.label4{
+    color: black;
+    font-size: 25px; 
+}
+
+.label5{
+    position: absolute;
+    top: 240px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    color: darkred;
+}
+
+.label6{
+    color: darkgreen;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#check{
+    width: 270px;
+    height: 20px;
+}
+
+.label7{
+    position: absolute;
+    color: black;
+    font-size: 20px;
+}
+
+.pay{
+    position: absolute;
+    z-index: 1;
+    top: 600px;
+    left: 830px;
+    cursor: pointer;
+    background-color: blue;
+    font-size: 25px;
+    padding: 4px 5px;
+    color: black;
+}
+
+#nes{
+    position: absolute;
+    top: 440px;
+    left: 200px;
+    height: 210px;
+    width: 400px;
+}
